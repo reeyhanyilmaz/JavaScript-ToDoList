@@ -1,0 +1,119 @@
+ *{
+    padding: 0;
+    margin: 0;
+ }
+
+.container {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+.header{
+    width: 600px;
+    height: 150px;
+    background: linear-gradient(35deg, #ccffff, #ffcccc, rgb(204, 204, 255));
+    text-align: center;    
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h1 {
+    color: white;
+    margin-top: 40px; 
+}
+
+ul{
+   margin: 0 auto;
+   padding: 0;
+   width: 600px;
+}
+
+li {
+    padding: 12px 15px 12px 40px;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    list-style-type: none;
+    background: #eee;
+    width: 100%;   /*parent'ın 100%ünü kullan*/
+}
+
+li:nth-child(odd){
+    background: #cfcbcb;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background-color: #be72ae;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+  ul li.checked::before { /* soldaki beyaz check tiki için */
+    content: ""; /*  yazılacak yazı*/
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 13px;
+    left: 16px;
+    transform: rotate(45deg); /* tikin açısını belirleriz*/
+    height: 15px;
+    width: 7px;
+  }
+  
+#input {
+    width: 75%;
+    float: left;   
+    padding: 10px;
+    border: none;
+}
+
+#ekle {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    color: #555;
+    background: #eee;
+    cursor: pointer;   
+}
+
+#ekle:hover {
+    background: #cfcbcb;
+}
+ 
+.close {
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 12px 15px 12px 20px;
+
+}
+
+.close:hover {
+    background-color: #be72ae;
+    color: white;
+} 
+
+/* .hide {
+    display: none !important; 
+}
+
+.show {
+    display: initial !important;
+} */
+
+@media screen and (max-width: 400px) {
+    .header, ul {
+      width: 300px;
+    }
+
+    #input {
+        width: 200px;
+    }
+}
