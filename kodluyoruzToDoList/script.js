@@ -6,8 +6,7 @@ const toastUnsuccess = document.querySelector("#liveToastErr")
 
 loadedPage ();
 
-addition.addEventListener("click", newElement) // tıklayınca ne olmasını istedigimiz
-list.addEventListener("click", deleteElement)
+list.addEventListener("click", deleteElement) // tıklayınca ne olmasını istedigimiz
 list.addEventListener("click", missionCompleted)
 
 

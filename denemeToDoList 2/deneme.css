@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+ 
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    /*
+    background: linear-gradient(35deg, #baf3f3, #f5b9b9, rgb(180, 180, 226));
+    padding: 10px; */
+}
+
+.wrapper {
+   margin: 120px auto; 
+   max-width: 400px;
+   width: 100%;
+   background-color: #fff;
+   border-radius: 5px;
+   padding: 25px;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputField input {
+    width: 85%;
+    height: 100%;
+    border-radius: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.inputField button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6; 
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.inputField button.active { /* acive: tıklanınca olmasını istediğimiz*/ 
+    opacity: 1; /* buton rengi opaklığı (daha soluk renk verdik) */
+    pointer-events: auto; /* fare tıklamasına müdahale etmez*/ 
+}
+
+.wrapper .todoList{
+max-height:  250px; /* 250den fazla olunca scrol olması sağlandı*/
+overflow-y: auto ; /* kutudan taşmayıp scrol içine girmesi sağlandı li elementlerin*/
+}
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative; /* trash icon düzgün konumlandı */
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px; 
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden; /* mouse ile gelince trash icon görünür */ 
+    word-wrap: break-word;
+
+}
+
+.todoList li.icon {
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    text-align: center;
+    width: 45px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    background: #e74c3c; 
+    transition: all 0.3s ease; /* animasyon geçişin hızını ayarladık daha yavaş oldu */
+
+}
+
+.todoList li:hover .icon{
+    right: 0px; /* li span right: -45px , mouse üzerine gelince ve çekince animasyon gibi oldu.*/ 
+}
+
+.wrapper .footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.footer button {
+    border: none;
+    outline: none;
+    background-color: rebeccapurple;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px; 
+    opacity: 0.6; 
+    pointer-events: none;
+}
+
+.footer button.active { /* acive: tıklanınca olmasını istediğimiz*/ 
+    opacity: 1; /* buton rengi opaklığı (daha soluk renk verdik) */
+    pointer-events: auto; /* fare tıklamasına müdahale etmez*/ 
+}

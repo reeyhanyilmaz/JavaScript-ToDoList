@@ -1,2 +1,2 @@
 # JavaScript-ToDoList
-This repository include To Do List project at Kodluyoruz.org JavaScript module.
+This repository include two different To Do List project. 
