@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.container {
+    width: 200px;
+    height: auto;
+    margin: 50px auto;
+    background-color: royalblue; 
+}
+
+header {
+    text-align: center;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ ul {
+    list-style-type: none;
+ }
+footer button {
+    float: right;
+}

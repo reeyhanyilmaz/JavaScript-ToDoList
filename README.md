@@ -1,2 +1,2 @@
 # JavaScript-ToDoList
-This repository include two different To Do List project. 
+This repository include many different To Do List project. 
